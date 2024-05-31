@@ -1,0 +1,12 @@
+# NOTES
+- the client and server routing lives inside the app folder. page.tsx indicates routing. next js uses file and folder based routing.
+- for routing to work , the export should be default.
+- for folder name to not be included in routing, you should write it inside paranthesis like (auth), or (main).
+- if we want to access all the query parameters, we can make another folder named [[...sign-in]] (this is also referred as catchAllRoute) and add page.tsx inside that folder.
+- previously the clerk middleware by default protected all routes, since the last update, all routes are public, and we decide which routes are to be protected.
+- The lucide react comes from shadcn ui default style, if we chose new york style, then we would get the radix icons.
+- For api routes , see the structure of test folder inside api folder.
+- For routing of backend, we can use either the folder structure of api as in the test route case (/api/test) or we can use the Hono js library. for writing the express routing of nodejs, we have to use libraries like honojs.
+- If we want to expose the env variables to client, then use NEXT_PUBLIC_ as a prefix.
+- marking with "use client" will make that component a client component, but it will still be rendered on server side.
+- the cn method should be used when dynamically changing tailwind classes.

@@ -1,0 +1,41 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1715688325721,
+      "tag": "0000_shocking_whirlwind",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1715688861138,
+      "tag": "0001_soft_matthew_murdock",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1715952921869,
+      "tag": "0002_premium_mulholland_black",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1715957447351,
+      "tag": "0003_light_tag",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1716124615712,
+      "tag": "0004_gigantic_winter_soldier",
+      "breakpoints": true
+    }
+  ]
+}
