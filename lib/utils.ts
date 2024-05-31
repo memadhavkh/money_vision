@@ -66,9 +66,9 @@ export function formatDateRange( period?: Period){
     return `${format(defaultFrom, "LLL dd")} - ${format(defaultTo, "LLL dd, y")}`;
   }
   if(!period?.to){
-    return `${format(period.from, "LLL dd")} - ${format(period.to, "LLL dd, y")}`;
+    return `${format(period.from, "LLL dd")} - ${format(defaultTo, "LLL dd, y")}`;
   }
-  return format(period.from, "LLL dd, y")
+  return `${format(new Date(period.from), "LLL dd, y")} - ${format(new Date(period.to), "LLL dd, y")}`;
 }
 
 export function formatPercentage(

@@ -3,7 +3,7 @@ import { formatCurrency } from "@/lib/utils";
 const COLORS = ["#0062ff", "#12c6ff", "#ff647f", "#ff9354"];
 
 type Props = {
-  data: {
+  data?: {
     name: string;
     value: number;
   }[];
@@ -11,7 +11,7 @@ type Props = {
 export const RadialVariant = ({data} : Props) => {
   return (
     <ResponsiveContainer width="100%" height={350}>
-      <RadialBarChart cx='50%' cy='30%' barSize={10} innerRadius='90%' outerRadius='40%' data={data.map((item, index) => ({
+      <RadialBarChart cx='50%' cy='30%' barSize={10} innerRadius='90%' outerRadius='40%' data={data?.map((item, index) => ({
         ...item, 
         fill: COLORS[index % COLORS.length]
       }))}>

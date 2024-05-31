@@ -4,7 +4,7 @@ import { CategoryTooltip } from "./category-tooltip";
 const COLORS = ["#0062ff", "#12c6ff", "#ff647f", "#ff9354"];
 
 type Props = {
-  data: {
+  data?: {
     name: string;
     value: number;
   }[];
@@ -42,7 +42,7 @@ export const PieVariant = ({data} : Props) => {
           dataKey="value"
           labelLine={false}
         >
-            {data.map((entry, index) => (
+            {data?.map((entry, index) => (
               <Cell
                 key={`cell-${index}`}
                 fill={COLORS[index % COLORS.length]}
